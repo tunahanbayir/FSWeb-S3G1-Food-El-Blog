@@ -1,52 +1,86 @@
+body {
+  padding: 0;
+  margin: 0
+}
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
 
-h1 {
+h1.main-title
+ {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
-  /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  font-size: 38px;
+  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Gaegu', cursive;
   margin-bottom: 0;
   padding: 0 10px;
-  /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
 
-/*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
+h3 {
+  font-size: 16px;
+}
 
-font-size: 16px;
+
+.content-row h2 {
+  margin-top: 0;
+}
+.content-row p {
+  margin: 10px 0;
+
+}
+
+*/
+p{
+  font-size: 16px;
 font-family: roboto;
 padding: 10px;
 line-height: 1.4;
 
-*/
+}
 
 
-/*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
+img{
   border-radius: 10px;
-
-*/
+  max-width: 100%;
+}
 
 .content-row {
   display: flex;
 }
 
 .content-row div {
-  /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+ min-width: 30%;
+ margin: 30px 20px;
 }
 
 .container {
-  /*======= width property yaratın. Değerini 605px olarak atayın */
+  
+  width: 800px;
   margin: 0 auto;
+
+
+}
+.banner-container{
+  padding: 20px 0;
+  background-color: whitesmoke;
+  
+}
+#banner-img {
+  width: 800px;
+  border-radius: 10px;
+  
+ 
+
 }
 
 .container header nav a {
   margin: 0 10px;
+  font-family: 'Gaegu', cursive;
   border: 1px solid lightgray;
   padding: 20px;
   display: inline-block;
@@ -54,7 +88,8 @@ line-height: 1.4;
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
+  background: #E79947 ;
+   
   
 }
 
@@ -88,6 +123,7 @@ footer {
 
 footer .footer-content { 
   margin: 0 auto; 
+  width: 800px;
   /*======= width property yaratın. Değerini 605px olarak atayın */
   
 }
@@ -101,22 +137,24 @@ footer nav {
   display: flex;
 }
 
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:
+
+footer nav a {
   margin: 10px;
   color: black;
   text-decoration: underline;
-*/
-
-
-footer nav a:first-child {
-  margin-left: 0;
+  padding-right: 30px;
+  font-family: 'Gaegu', cursive;
 }
 
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
+
+
+footer nav a:hover{
   color: white;
-*/
+} 
+
+
 
 footer .footer-content .copyright {
   padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
+   
 }
